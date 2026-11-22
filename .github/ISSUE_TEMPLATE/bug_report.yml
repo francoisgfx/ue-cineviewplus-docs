@@ -1,0 +1,57 @@
+name: Bug report
+description: Something in CineViewPlus does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Do not post order details, personal information, or confidential project images.
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Unreal Engine version
+      options: ["5.6", "5.7", "5.8"]
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+    validations:
+      required: true
+  - type: input
+    id: plugin
+    attributes:
+      label: CineViewPlus version
+      description: Shown in Edit > Plugins.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open a Cinematic Viewport\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Output Log
+      description: Lines mentioning CineViewPlus, or the crash callstack.
+      render: text
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video

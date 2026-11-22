@@ -1,0 +1,20 @@
+name: Question
+description: Ask how to do something with CineViewPlus.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Do not post order details, personal information, or confidential project images.
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Unreal Engine version
+      options: ["5.6", "5.7", "5.8"]
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
