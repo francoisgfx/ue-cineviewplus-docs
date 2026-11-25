@@ -16,7 +16,7 @@ body:
     id: os
     attributes:
       label: Operating system
-      options: [Windows, macOS, Linux]
+      options: [Windows, macOS]
     validations:
       required: true
   - type: input

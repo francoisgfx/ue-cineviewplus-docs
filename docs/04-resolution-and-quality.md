@@ -1,17 +1,22 @@
+---
+title: Resolution and quality
+nav_order: 5
+---
+
 # Resolution and quality
 
-## Fixed Res
+## Fixed Resolution
 
-**Fixed Res** (Alt+Shift+X) controls how the image is rendered.
+**Fixed Resolution** (Alt+Shift+X) controls how the image is rendered.
 
-- **On:** the viewport renders at exactly W x H at any panel size, with the Downrez percentage applied.
-- **Off:** standard Unreal behavior. The render follows the panel size and your editor screen percentage is restored. Zoom, pan and object selection keep working.
+- **On:** the viewport renders at exactly W x H at any panel size.
+- **Off:** the render follows the panel size, as in standard Unreal. Downrez still applies. Zoom, pan and object selection keep working.
 
-Turning Fixed Res back on shows the image centered at a pixel-true 100%.
+Turning Fixed Resolution back on shows the image centered at a pixel-true 100%.
 
-Fixed Res is not always the slower option, nor always the faster one. A large panel can contain more pixels than your W x H, and a small panel fewer.
+Fixed Resolution is not always the slower option, nor always the faster one. A large panel can contain more pixels than your W x H, and a small panel fewer.
 
-While CineViewPlus is active with Fixed Res on, the screen percentage comes from Downrez, so the editor's automatic screen percentage cannot silently lower the image quality. Your own value returns when you turn Fixed Res or CineViewPlus off.
+While CineViewPlus is active, the screen percentage comes from Downrez in both modes, so the editor's automatic screen percentage cannot silently lower the image quality. Your own value returns when you turn CineViewPlus off.
 
 ## Setting the resolution
 
@@ -19,7 +24,7 @@ Type a value in **W** or **H** and press Enter, or drag the field and release.
 
 - The viewport updates when you press Enter or release the drag, not during the drag.
 - Dragging stops at 8192. Values up to 16384 must be typed.
-- The resolution is shared by all Cinematic Viewports.
+- Each Cinematic Viewport has its own resolution.
 
 ## Resolution readout
 
@@ -42,7 +47,7 @@ Downrez renders the scene at a fraction of the fixed resolution and upscales it 
 | 1:3 | 33% | 634 x 356 |
 | 1:4 | 25% | 480 x 270 |
 
-The **Custom** field in the menu accepts any value from 25 to 100. Unreal does not allow a preview screen percentage below 25%. Downrez only applies while Fixed Res is on.
+The **Custom** field in the menu accepts any value from 25 to 200, the range of Unreal's own Screen Percentage slider. Downrez and that slider are the same value: changing one updates the other. Downrez applies with Fixed Resolution on or off.
 
 ![Downrez dropdown open](images/downrez-menu.png)
 
@@ -54,11 +59,11 @@ This menu sets all engine scalability groups to **Low**, **Medium**, **High**, *
 
 ## Pause
 
-**Pause** (Alt+Shift+Space) stops continuous rendering and freezes the image, including while Sequencer is open. The image still refreshes on demand. Your Realtime setting is left untouched and applies again when you unpause or turn CineViewPlus off.
+**Pause** (Alt+Shift+L) stops continuous rendering and freezes the image, including while Sequencer is open. The image still refreshes on demand. Your Realtime setting is never changed. If Realtime is off, the viewer shows as paused; unpausing it in CineViewPlus runs it until you turn CineViewPlus off, then Realtime is off again.
 
 ## Pixel-Exact Zoom
 
-With Fixed Res on and the zoom above 100%, each render pixel is displayed as a hard square rather than a smoothed image, so you can inspect aliasing and edges.
+With Fixed Resolution on and the zoom above 100%, each render pixel is displayed as a hard square rather than a smoothed image, so you can inspect aliasing and edges.
 
 This copies each frame into an extra texture, only while the image is shown above 100%.
 

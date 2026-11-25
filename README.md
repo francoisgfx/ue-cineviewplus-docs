@@ -1,3 +1,9 @@
+---
+title: Home
+nav_order: 1
+permalink: /
+---
+
 # CineViewPlus
 
 CineViewPlus turns Unreal Engine's Cinematic Viewport into a compositing-style image viewer. The image renders at a fixed resolution, whatever the size of the panel, and you can zoom and pan it in 2D without moving the camera.
@@ -16,7 +22,7 @@ CineViewPlus turns Unreal Engine's Cinematic Viewport into a compositing-style i
 - **Pause** that also works while Sequencer is open
 - **Rebindable keyboard shortcuts**
 
-Default viewports are never affected. CineViewPlus only activates on Cinematic Viewports.
+Default viewports are never affected. CineViewPlus only activates on Cinematic Viewports, and each one keeps its own settings.
 
 ## Documentation
 

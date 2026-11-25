@@ -1,3 +1,8 @@
+---
+title: Rulers and eyedropper
+nav_order: 7
+---
+
 # Rulers and eyedropper
 
 ## Rulers
@@ -29,7 +34,7 @@ X   960  Y   540 | R 0.502  G 0.545  B 0.620 | 128 139 158
 | Float | Color from 0 to 1 |
 | 8-bit | Color from 0 to 255 |
 
-![Eyedropper sampling pixels on hover, then holding a value on click](images/eyedropper.gif)
+<video src="images/eyedropper.mp4" autoplay loop muted playsinline preload="metadata" aria-label="Eyedropper sampling pixels on hover, then holding a value on click" style="max-width:100%"><a href="images/eyedropper.mp4">Eyedropper sampling pixels on hover, then holding a value on click</a></video>
 
 ### Keep a value
 

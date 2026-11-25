@@ -1,15 +1,20 @@
+---
+title: Keyboard shortcuts
+nav_order: 9
+---
+
 # Keyboard shortcuts
 
 On macOS, **Alt** is the **Option** key.
 
 | Action | Default shortcut |
 |---|---|
-| Fit image | Home or Shift+F |
+| Fit image | Home or Alt+Shift+F |
 | Zoom to 100% | Alt+Shift+T |
 | Zoom in | Alt+= |
 | Zoom out | Alt+- |
-| Toggle Fixed Res | Alt+Shift+X |
-| Toggle Pause | Alt+Shift+Space |
+| Toggle Fixed Resolution | Alt+Shift+X |
+| Toggle Pause | Alt+Shift+L |
 | Pan tool | Alt+Shift+N |
 | Zoom tool | Alt+Shift+Z |
 | Toggle rulers | Alt+Shift+U |

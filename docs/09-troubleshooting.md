@@ -1,3 +1,8 @@
+---
+title: Troubleshooting and FAQ
+nav_order: 10
+---
+
 # Troubleshooting and FAQ
 
 ## The controls bar does not appear
@@ -16,7 +21,7 @@ If the bar still does not appear, the same controls may be in the main viewport 
 
 ## Left click does not select objects
 
-The Pan tool, the Zoom tool or the eyedropper is probably on. Turn it off in the controls bar.
+The Pan tool, the Zoom tool or the eyedropper is probably on. Turn it off in the controls bar. Only one of the three can be on at a time.
 
 ## Alt + left drag does not orbit the camera
 
@@ -35,7 +40,7 @@ Check that **Pause** is off.
 
 ## The zoomed image looks blurry
 
-Check that Fixed Res and **Pixel-Exact Zoom** are both on. If **Downrez** is below 1:1, the image is upscaled, so its pixels no longer match the scene's.
+Check that Fixed Resolution and **Pixel-Exact Zoom** are both on. If **Downrez** is below 1:1, the image is upscaled, so its pixels no longer match the scene's.
 
 ## The color values differ from Nuke
 
@@ -43,7 +48,7 @@ The eyedropper reads [display-referred values](06-rulers-and-eyedropper.md#what-
 
 ## Why can't Downrez go below 1:4?
 
-Unreal limits the preview screen percentage to a minimum of 25%.
+Unreal limits the preview screen percentage to 25 to 200%.
 
 ## Does it affect Movie Render Queue?
 
@@ -55,7 +60,7 @@ CineViewPlus stands down while Play In Editor runs in the viewport, then reactiv
 
 ## Can each viewport have its own resolution?
 
-Not at the moment. All Cinematic Viewports share the same W x H.
+Yes. Each Cinematic Viewport keeps its own W x H, Downrez, rulers and on/off state. Only Pixel-Exact Zoom and the engine scalability level are shared.
 
 ## Is the plugin included in my packaged game?
 
@@ -63,7 +68,6 @@ No. CineViewPlus is an editor-only plugin.
 
 ## Known limitations
 
-- The resolution is shared across Cinematic Viewports.
 - Downrez stops at 25%.
 - Color values are display-referred.
 - Activation can take up to half a second after switching viewport type.

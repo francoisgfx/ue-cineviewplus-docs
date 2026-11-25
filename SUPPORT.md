@@ -1,3 +1,8 @@
+---
+title: Support
+nav_order: 11
+---
+
 # Support
 
 Support is handled through this repository's [Issues](https://github.com/francoisgfx/ue-cineviewplus-docs/issues/new/choose).

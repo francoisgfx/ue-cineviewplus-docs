@@ -1,3 +1,8 @@
+---
+title: Installation
+nav_order: 2
+---
+
 # Installation
 
 ## Requirements
@@ -13,8 +18,7 @@
 | Platform | UE 5.6 | UE 5.7 | UE 5.8 |
 |---|---|---|---|
 | macOS | Tested | Tested | Tested |
-| Windows (Win64) | Not yet tested | Not yet tested | Not yet tested |
-| Linux | Not yet tested | Not yet tested | Not yet tested |
+| Windows (Win64) | Tested | Tested | Tested |
 
 ## Install from Fab
 
